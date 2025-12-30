@@ -11,3 +11,9 @@ node_modules/
 # Build folders
 build/
 dist/
+
+# Docker & Kubernetes files (hidden)
+Dockerfile
+deployment.yaml
+service.yaml
+
