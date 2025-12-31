@@ -1,22 +1,20 @@
-## Node Environment
-FROM node:18
+# Node js version
+FROM node:20-alpine
 
-## Application path
+# working directory
 WORKDIR /usr/src
 
-## Copy package.json
+# Copy package.json and package-lock.json first for caching
 COPY package*.json ./
 
-## Install dependencies
-RUN npm install
+# Install dependencies
+RUN npm install --production
 
-## Copy the rest of the code
+# Copy the rest of the application
 COPY . .
 
-# Expose the port number
+# Expose the port your app listens on
 EXPOSE 5000
 
-## Start the backend
+# Start the app
 CMD ["node", "server.js"]
-
-

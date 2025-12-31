@@ -18,6 +18,10 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(bodyParser.json());
 
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 app.use("/api", routes);
 app.use(errorHandler);
 
