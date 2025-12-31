@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend-container # Kubernetes container name
-          image: backend-project:1.0.0 # Docker image name
+          image: subbarayudu2011/backend-project:1.0.0 # Docker image name
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
