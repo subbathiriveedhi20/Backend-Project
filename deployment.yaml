@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-container
-          image: subbarayudu2011/backend-project:1.0.2
+          image: 807238076947.dkr.ecr.us-east-1.amazonaws.com/backend-app
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
