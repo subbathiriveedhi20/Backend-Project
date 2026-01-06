@@ -16,4 +16,8 @@ dist/
 Dockerfile
 deployment.yaml
 service.yaml
+eks-prod.yaml
+
+# IAM Policy file
+iam_policy.json 
 
